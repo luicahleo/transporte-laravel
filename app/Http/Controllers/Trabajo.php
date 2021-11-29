@@ -21,10 +21,11 @@ class Trabajo extends Controller
         // $command = "python hola.py";
         // $process = new Process($command);
         // $scriptFile = 'C:\MAMP\htdocs\transporte\hola.py';
-        $scriptFile = 'c:/MAMP/htdocs/transporte/resources/views/trabajo/hola.py';
+        //$scriptFile = '/public/scripts/Trabajov0.py';
+        $scriptFile = "C:/Users/luisr/PycharmProjects/trabajo0/Trabajov0.py";
         // $command = "python " . $scriptFile;
-        // $process = new Process($command);
-        $process = new Process(['C:/Users/luisr/AppData/Local/Programs/Python/Python310/python.exe', $scriptFile]);
+         $process = new Process(['ls']);
+        //$process = new Process(['C:\Users\luisr\PycharmProjects\trabajo0\venv\Scripts\python.exe', $scriptFile]);
         $process->run();
 
         if(!$process->isSuccessful()){
