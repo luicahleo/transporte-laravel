@@ -17,6 +17,7 @@ class Trabajo extends Controller
     public function index()
     {
 
+        // pruebas
         // $command = "python hola.py";
         // $process = new Process($command);
         // $scriptFile = 'C:\MAMP\htdocs\transporte\hola.py';
